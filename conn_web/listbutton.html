@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PyWebView Double Column UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            width: 45%;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+
+        /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+    </style>
+</head>
+<body>
+
+<div class="column">
+    <h2>Column 1</h2>
+    <button class="btn" onclick="buttonClicked('Button 1A')">Button 1A</button>
+    <button class="btn" onclick="buttonClicked('Button 1B')">Button 1B</button>
+    <button class="btn" onclick="buttonClicked('Button 1C')">Button 1C</button>
+</div>
+
+<div class="column">
+    <h2>Column 2</h2>
+    <button class="btn" onclick="buttonClicked('Button 2A')">Button 2A</button>
+    <button class="btn" onclick="buttonClicked('Button 2B')">Button 2B</button>
+    <button class="btn" onclick="buttonClicked('Button 2C')">Button 2C</button>
+</div>
+
+<!-- Rectangular switch -->
+<label class="switch">
+    <input id="status" type="checkbox">
+    <span class="slider"></span>
+  </label>
+  
+  <!-- Rounded switch -->
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label>
+
+<script>
+    function buttonClicked(buttonName) {
+        pywebview.api.button_clicked(buttonName).then(function(response) {
+
+            alert(response)
+        })
+
+    }
+
+    function readall() {
+        pywebview.api.refresh().then(function(response){
+            res = JSON.parse(response)
+            
+            document.getElementById('status').checked = res.val
+        })
+    }
+
+    function evalJs() {
+        setInterval(readall, 500)
+    }
+</script>
+
+</body>
+</html>

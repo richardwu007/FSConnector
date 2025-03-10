@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PyWebView ListBox UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select an item from the list:</h2>
+    <select id="listbox" size="5" style="width: 200px;">
+        <option value="Item 1">Item 1</option>
+        <option value="Item 2">Item 2</option>
+        <option value="Item 3">Item 3</option>
+        <option value="Item 4">Item 4</option>
+        <option value="Item 5">Item 5</option>
+    </select>
+
+    <button onclick="itemSelected()">Submit</button>
+
+    <script>
+        function itemSelected() {
+            let selectedValue = document.getElementById('listbox').value;
+            pywebview.api.item_selected(selectedValue);
+        }
+    </script>
+</body>
+</html>

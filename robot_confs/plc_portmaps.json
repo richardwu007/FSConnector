@@ -1,0 +1,50 @@
+{
+    "Manufacturer": "PLC",
+    "ControllerName": "PLC",
+    "InputPorts":[
+        
+    ],
+    "OutputPorts": 
+         [
+            
+        ],
+   "Joints":
+        [
+            {"Index": 0,
+            "Name": "Rz",
+            "Min": -1800.0,
+            "Max": 1800.0,
+            "Val": 0.00
+            },
+            {"Index": 1,
+            "Name": "X",
+            "Min": -20000.0,
+            "Max": 20000.0,
+            "Val": -25.504
+            },
+            {"Index": 2,
+            "Name": "Y",
+            "Min": -20000.0,
+            "Max": 20000.0,
+            "Val": 30.366
+            },
+            {"Index": 3,
+            "Name": "Z",
+            "Min": -20000.0,
+            "Max": 20000.0,
+            "Val": 0.000
+            },
+            {"Index": 4,
+            "Name": "A",
+            "Min": -1800.0,
+            "Max": 1800.0,
+            "Val": 0.00
+            },
+            {"Index": 5,
+            "Name": "C",
+            "Min": -1800.0,
+            "Max": 1800.0,
+            "Val": 0.00
+            }
+        ]
+}

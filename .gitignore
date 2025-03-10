@@ -1,0 +1,10 @@
+*/__pycache__/*
+.vscode/
+venv/*
+dist/*
+build/*
+*.pyc
+asyncua/*/__pycache__/*
+*.7z
+forward_ex.py
+reverse_ik_ex.py

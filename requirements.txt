@@ -1,0 +1,16 @@
+websockets==13.1
+paho-mqtt
+lxml==4.9.3
+flask
+pyinstaller==6.3
+numpy==1.26.2
+PyPubSub
+pywebview==5.3.1
+pyModbusTCP==0.2.1
+pytz
+aiofiles
+cryptography
+asyncio==3.4.3
+python-dateutil
+pydevd
+# -i https://pypi.tuna.tsinghua.edu.cn/simple

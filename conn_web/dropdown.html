@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load JSON to Dropdown</title>
+</head>
+<body>
+
+<input type="file" id="jsonFileInput" accept=".json">
+<select id="jsonDropdown"></select>
+<br>
+<label for="selectedValue">Selected Value:</label>
+<input type="text" id="selectedValue" readonly>
+
+<script>
+    document.getElementById('jsonFileInput').addEventListener('change', function(event){
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const content = e.target.result;
+                try {
+                    const jsonData = JSON.parse(content);
+                    if (typeof jsonData === "object" && !Array.isArray(jsonData)) {
+                        populateDropdown(Object.keys(jsonData));
+                    } else if (Array.isArray(jsonData)) {
+                        populateDropdown(jsonData);
+                    } else {
+                        console.error("Unexpected JSON structure.");
+                    }
+                } catch (error) {
+                    console.error("Error parsing JSON", error);
+                }
+            };
+            reader.readAsText(file);
+        }
+    });
+
+    document.getElementById('jsonDropdown').addEventListener('change', function(event){
+        document.getElementById('selectedValue').value = event.target.value;
+    });
+
+    function populateDropdown(data) {
+        const dropdown = document.getElementById('jsonDropdown');
+        dropdown.innerHTML = ""; // Clear existing options
+        data.forEach(item => {
+            const option = document.createElement('option');
+            option.value = item;
+            option.innerText = item;
+            dropdown.appendChild(option);
+        });
+    }
+</script>
+
+</body>
+</html>

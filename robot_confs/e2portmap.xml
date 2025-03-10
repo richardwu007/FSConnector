@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<E2XML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <General>
+    <Author>porky</Author>
+    <Created>08/19/2023 18:26:52</Created>
+    <Version>3.0</Version>
+    <Unit Name="Meter" Type="Length" Meter="1" />
+  </General>
+  <ControllerPorts>
+    <ControllerPortsSettings InputPortsNumber="64" OutputPortsNumber="72" InputPortPrefix="I" OutputPortPrefix="Q" InputPortsOffset="800" OutputPortsOffset="800" />
+    <ControllerInputPorts>
+      <ControllerPort Address="I100.0" Name="A1 Min" />
+      <ControllerPort Address="I100.1" Name="A1 Max" />
+      <ControllerPort Address="I100.2" Name="A3 Min" />
+      <ControllerPort Address="I100.3" Name="A3 Max" />
+      <ControllerPort Address="I100.4" Name="SPickCupJ2 Min" />
+      <ControllerPort Address="I100.5" Name="SPickCupJ2 Max" />
+      <ControllerPort Address="I100.6" Name="SClamp1 Min" />
+      <ControllerPort Address="I100.7" Name="SClamp1 Max" />
+      <ControllerPort Address="I101.0" Name="SClamp2 Min" />
+      <ControllerPort Address="I101.1" Name="SClamp2 Max" />
+      <ControllerPort Address="I101.2" Name="SSlideCupJ1 Min" />
+      <ControllerPort Address="I101.3" Name="SSlideCupJ1 Max" />
+      <ControllerPort Address="I101.4" Name="SSlideCupJ2 Min" />
+      <ControllerPort Address="I101.5" Name="SSlideCupJ2 Max" />
+      <ControllerPort Address="I101.6" Name="SPickCapJ1 Min" />
+      <ControllerPort Address="I101.7" Name="SPickCapJ1 Max" />
+      <ControllerPort Address="I102.0" Name="SPickCapJ2 Min" />
+      <ControllerPort Address="I102.1" Name="SPickCapJ2 Max" />
+      <ControllerPort Address="I102.2" Name="SIssueCap Min" />
+      <ControllerPort Address="I102.3" Name="SIssueCap Max" />
+      <ControllerPort Address="I102.4" Name="SBallRotator1 Min" />
+      <ControllerPort Address="I102.5" Name="SBallRotator1 Max" />
+      <ControllerPort Address="I102.6" Name="SConveyor1 Min" />
+      <ControllerPort Address="I102.7" Name="SConveyor1 Max" />
+      <ControllerPort Address="I103.0" Name="SConveyor2 Min" />
+      <ControllerPort Address="I103.1" Name="SConveyor2 Max" />
+      <ControllerPort Address="I103.2" Name="EngraveReady" />
+      <ControllerPort Address="I103.3" Name="" />
+      <ControllerPort Address="I103.4" Name="" />
+      <ControllerPort Address="I103.5" Name="" />
+      <ControllerPort Address="I103.6" Name="" />
+      <ControllerPort Address="I103.7" Name="" />
+      <ControllerPort Address="I104.0" Name="" />
+      <ControllerPort Address="I104.1" Name="" />
+      <ControllerPort Address="I104.2" Name="" />
+      <ControllerPort Address="I104.3" Name="" />
+      <ControllerPort Address="I104.4" Name="" />
+      <ControllerPort Address="I104.5" Name="" />
+      <ControllerPort Address="I104.6" Name="" />
+      <ControllerPort Address="I104.7" Name="" />
+      <ControllerPort Address="I105.0" Name="" />
+      <ControllerPort Address="I105.1" Name="" />
+      <ControllerPort Address="I105.2" Name="" />
+      <ControllerPort Address="I105.3" Name="" />
+      <ControllerPort Address="I105.4" Name="" />
+      <ControllerPort Address="I105.5" Name="" />
+      <ControllerPort Address="I105.6" Name="" />
+      <ControllerPort Address="I105.7" Name="" />
+      <ControllerPort Address="I106.0" Name="" />
+      <ControllerPort Address="I106.1" Name="" />
+      <ControllerPort Address="I106.2" Name="" />
+      <ControllerPort Address="I106.3" Name="" />
+      <ControllerPort Address="I106.4" Name="" />
+      <ControllerPort Address="I106.5" Name="" />
+      <ControllerPort Address="I106.6" Name="" />
+      <ControllerPort Address="I106.7" Name="" />
+      <ControllerPort Address="I107.0" Name="" />
+      <ControllerPort Address="I107.1" Name="" />
+      <ControllerPort Address="I107.2" Name="" />
+      <ControllerPort Address="I107.3" Name="" />
+      <ControllerPort Address="I107.4" Name="" />
+      <ControllerPort Address="I107.5" Name="" />
+      <ControllerPort Address="I107.6" Name="" />
+      <ControllerPort Address="I107.7" Name="" />
+    </ControllerInputPorts>
+    <ControllerOutputPorts>
+      <ControllerPort Address="Q100.0" Name="TEST1" />
+      <ControllerPort Address="Q100.1" Name="TEST2" />
+      <ControllerPort Address="Q100.2" Name="TEST3" />
+      <ControllerPort Address="Q100.3" Name="TEST4" />
+      <ControllerPort Address="Q100.4" Name="MP_ToolFixer" />
+      <ControllerPort Address="Q100.5" Name="MP_IssueCup" />
+      <ControllerPort Address="Q100.6" Name="MP_PickCup1" />
+      <ControllerPort Address="Q100.7" Name="MP_Conveyer" />
+      <ControllerPort Address="Q101.0" Name="MP_PickCap" />
+      <ControllerPort Address="Q101.1" Name="SClamp1 Toggle" />
+      <ControllerPort Address="Q101.2" Name="SClamp2 Toggle" />
+      <ControllerPort Address="Q101.3" Name="MP_IssueCap" />
+      <ControllerPort Address="Q101.4" Name="MP_SlideCup" />
+      <ControllerPort Address="Q101.5" Name="SBallRotator1 Toggle" />
+      <ControllerPort Address="Q101.6" Name="SSlideCupJ1 Toggle" />
+      <ControllerPort Address="Q101.7" Name="SSlideCupJ2 Toggle" />
+      <ControllerPort Address="Q102.0" Name="SPickCapJ1 Toggle" />
+      <ControllerPort Address="Q102.1" Name="SPickCapJ2 Toggle" />
+      <ControllerPort Address="Q102.2" Name="SIssueCap Toggle" />
+      <ControllerPort Address="Q102.3" Name="SConveyor1 Toggle" />
+      <ControllerPort Address="Q102.4" Name="SConveyor2 Toggle" />
+      <ControllerPort Address="Q102.5" Name="CupReady Request" />
+      <ControllerPort Address="Q102.6" Name="TEST5" />
+      <ControllerPort Address="Q102.7" Name="" />
+      <ControllerPort Address="Q103.0" Name="" />
+      <ControllerPort Address="Q103.1" Name="" />
+      <ControllerPort Address="Q103.2" Name="" />
+      <ControllerPort Address="Q103.3" Name="" />
+      <ControllerPort Address="Q103.4" Name="" />
+      <ControllerPort Address="Q103.5" Name="" />
+      <ControllerPort Address="Q103.6" Name="" />
+      <ControllerPort Address="Q103.7" Name="" />
+      <ControllerPort Address="Q104.0" Name="" />
+      <ControllerPort Address="Q104.1" Name="" />
+      <ControllerPort Address="Q104.2" Name="" />
+      <ControllerPort Address="Q104.3" Name="" />
+      <ControllerPort Address="Q104.4" Name="" />
+      <ControllerPort Address="Q104.5" Name="MP1" />
+      <ControllerPort Address="Q104.6" Name="MP2" />
+      <ControllerPort Address="Q104.7" Name="" />
+      <ControllerPort Address="Q105.0" Name="" />
+      <ControllerPort Address="Q105.1" Name="WF_RESP_Picked_Conv" />
+      <ControllerPort Address="Q105.2" Name="" />
+      <ControllerPort Address="Q105.3" Name="" />
+      <ControllerPort Address="Q105.4" Name="" />
+      <ControllerPort Address="Q105.5" Name="" />
+      <ControllerPort Address="Q105.6" Name="" />
+      <ControllerPort Address="Q105.7" Name="" />
+      <ControllerPort Address="Q106.0" Name="WF_REL_Place_CNC" />
+      <ControllerPort Address="Q106.1" Name="WF_RESP_Placed_CNC" />
+      <ControllerPort Address="Q106.2" Name="" />
+      <ControllerPort Address="Q106.3" Name="" />
+      <ControllerPort Address="Q106.4" Name="" />
+      <ControllerPort Address="Q106.5" Name="" />
+      <ControllerPort Address="Q106.6" Name="" />
+      <ControllerPort Address="Q106.7" Name="" />
+      <ControllerPort Address="Q107.0" Name="" />
+      <ControllerPort Address="Q107.1" Name="" />
+      <ControllerPort Address="Q107.2" Name="" />
+      <ControllerPort Address="Q107.3" Name="" />
+      <ControllerPort Address="Q107.4" Name="" />
+      <ControllerPort Address="Q107.5" Name="" />
+      <ControllerPort Address="Q107.6" Name="" />
+      <ControllerPort Address="Q107.7" Name="" />
+      <ControllerPort Address="Q108.0" Name="" />
+      <ControllerPort Address="Q108.1" Name="" />
+      <ControllerPort Address="Q108.2" Name="" />
+      <ControllerPort Address="Q108.3" Name="" />
+      <ControllerPort Address="Q108.4" Name="" />
+      <ControllerPort Address="Q108.5" Name="" />
+      <ControllerPort Address="Q108.6" Name="" />
+      <ControllerPort Address="Q108.7" Name="" />
+    </ControllerOutputPorts>
+  </ControllerPorts>
+</E2XML>
