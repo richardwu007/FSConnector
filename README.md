@@ -207,4 +207,4 @@ python -m pip install --upgrade pip
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
 
 ### Python 3.10 avoids the websocket connection issues
-C:\Users\wu_cc\AppData\Local\Programs\Python\Python310\Scripts\pyinstaller.exe -p C:\Users\wu_cc\AppData\Local\Programs\Python\Python310\Lib\site-packages  --onefile --windowed --icon=Fastsuite_E2_Icon.ico -p http -p webview -p websockets   -p asyncio -p asyncua -p conn_opcua -p conn_vrc -p conn_web --add-data "aitester.html;." --add-data "aitester.js;."  --add-data "Fastsuite_E2_Icon.ico;."  --add-data "CENIT_gross_RGB.png;." --add-data "webview;webview"  FSConnector.py
+C:\Users\wu_cc\AppData\Local\Programs\Python\Python310\Scripts\pyinstaller.exe -p C:\Users\wu_cc\AppData\Local\Programs\Python\Python310\Lib\site-packages  --onefile --windowed --icon=Fastsuite_E2_Icon.ico -p http -p webview -p websockets   -p asyncio -p asyncua -p conn_opcua -p conn_vrc -p conn_web --add-data "main.html;." --add-data "main.js;."  --add-data "Fastsuite_E2_Icon.ico;." --add-data "webview;webview"  FSConnector.py
